@@ -36,5 +36,5 @@ run:
       loginType:
       # end optional args
     outputs:
-      connectionString=:
+      connectionString:
 ```
