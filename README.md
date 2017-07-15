@@ -1,7 +1,7 @@
-# problem statement
+# Problem statement
 gets an azure servicebus namespace connection string
 
-# example usage
+# Example usage
 
 > note: in examples, VERSION represents a version of the azure.servicebus.namespace.connectionstring.get pkg
 
@@ -38,3 +38,8 @@ run:
     outputs:
       connectionString:
 ```
+
+# Support
+
+join us on [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
+or [open an issue](https://github.com/opspec-pkgs/azure.servicebus.namespace.connectionstring.get/issues)
