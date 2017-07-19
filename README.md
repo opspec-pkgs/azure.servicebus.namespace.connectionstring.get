@@ -20,23 +20,22 @@ opctl run github.com/opspec-pkgs/azure.servicebus.namespace.connectionstring.get
 ## compose
 
 ```yaml
-run:
-  op:
-    pkg: { ref: github.com/opspec-pkgs/azure.servicebus.namespace.connectionstring.get#VERSION }
-    inputs: 
-      subscriptionId:
-      loginId:
-      loginSecret:
-      loginTenantId:
-      namespace:
-      resourceGroup:
-      # begin optional args
-      authRule:
-      authRuleKey:
-      loginType:
-      # end optional args
-    outputs:
-      connectionString:
+op:
+  pkg: { ref: github.com/opspec-pkgs/azure.servicebus.namespace.connectionstring.get#VERSION }
+  inputs: 
+    subscriptionId:
+    loginId:
+    loginSecret:
+    loginTenantId:
+    namespace:
+    resourceGroup:
+    # begin optional args
+    authRule:
+    authRuleKey:
+    loginType:
+    # end optional args
+  outputs:
+    connectionString:
 ```
 
 # Support
