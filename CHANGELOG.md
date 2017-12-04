@@ -5,5 +5,16 @@ All notable changes will be documented in this file in accordance with
 
 ## \[Unreleased]
 
+## \[2.0.0] - 2017-12-04
+
+### Fixed
+
+- connectionString no longer written to stdOut
+
+### Changed
+
+- updated to opspec 0.1.5 format
+- connectionString output renamed to value
+
 ## \[1.0.0] - 2017-07-10
 

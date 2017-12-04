@@ -1,6 +1,8 @@
 const msRestAzure = require('ms-rest-azure');
 const AzureArmSb = require('azure-arm-sb');
 const process = require('process');
+const path = require('path');
+const fs = require('fs');
 
 const login = async () => {
     console.log('logging in');
@@ -35,9 +37,9 @@ const getConnString = async (credentials) => {
         process.env.authRule
     );
 
-    const connectionString = result[`${process.env.authRuleKey}ConnectionString`];
+    const value = result[`${process.env.authRuleKey}ConnectionString`];
 
-    console.log(`connectionString=${connectionString}`);
+    fs.writeFileSync(path.join(__dirname, 'value'), value);
 };
 
 login().then(getConnString).catch(error => {
