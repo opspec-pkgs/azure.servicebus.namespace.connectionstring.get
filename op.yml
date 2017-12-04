@@ -42,17 +42,17 @@ inputs:
       description: type of login; 'user' (default) or 'sp' for service principal
       default: user
 outputs:
-  connectionString:
+  value:
     string:
-      description: the namespace connection string
-version: 1.0.0
+      description: value of the namespace connection string
+version: 2.0.0
 run:
   container:
-    image: { ref: 'opspecpkgs/azure.servicebus.namespace.connectionstring.get:1.0.0' }
-    cmd: [node, /index.js]
-    files: { /index.js }
-    stdOut:
-      connectionString=: connectionString
+    image: { ref: 'opspecpkgs/azure.servicebus.namespace.connectionstring.get:2.0.0' }
+    cmd: [node, /cmd.js]
+    files:
+      /cmd.js:
+      /value: $(value)
     envVars:
       subscriptionId:
       loginId:
