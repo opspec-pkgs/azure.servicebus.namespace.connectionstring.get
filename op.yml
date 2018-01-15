@@ -1,4 +1,4 @@
-name: azure.servicebus.namespace.connectionstring.get
+name: github.com/opspec-pkgs/azure.servicebus.namespace.connectionstring.get
 description: gets an azure servicebus namespace connection string
 inputs:
   subscriptionId:
