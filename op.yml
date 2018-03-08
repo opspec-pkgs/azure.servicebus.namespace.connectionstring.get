@@ -45,10 +45,10 @@ outputs:
   value:
     string:
       description: value of the namespace connection string
-version: 2.0.0
+version: 2.1.0
 run:
   container:
-    image: { ref: 'opspecpkgs/azure.servicebus.namespace.connectionstring.get:2.0.0' }
+    image: { ref: 'opspecpkgs/azure.servicebus.namespace.connectionstring.get:2.1.0' }
     cmd: [node, /cmd.js]
     files:
       /cmd.js:
