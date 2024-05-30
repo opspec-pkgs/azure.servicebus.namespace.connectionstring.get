@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/opspec-pkgs/azure.servicebus.namespace.connectionstring.get.svg?branch=master)](https://travis-ci.org/opspec-pkgs/azure.servicebus.namespace.connectionstring.get)
+[![Build Status](https://github.com/opspec-pkgs/azure.servicebus.namespace.connectionstring.get/workflows/build/badge.svg?branch=main)](https://github.com/opspec-pkgs/azure.servicebus.namespace.connectionstring.get/actions?query=workflow%3Abuild+branch%3Amain)
 
 <img src="icon.svg" alt="icon" height="100px">
 
@@ -6,16 +6,12 @@
 
 gets an azure servicebus namespace connection string
 
-# Format
-
-the op uses [![opspec 0.1.5](https://img.shields.io/badge/opspec-0.1.5-brightgreen.svg?colorA=6b6b6b&colorB=fc16be)](https://opspec.io/0.1.5) definition format
-
 # Example usage
 
-## Install
+## Visualize
 
 ```shell
-opctl op install github.com/opspec-pkgs/azure.servicebus.namespace.connectionstring.get#2.1.0
+opctl ui github.com/opspec-pkgs/azure.servicebus.namespace.connectionstring.get#2.1.0
 ```
 
 ## Run
@@ -30,16 +26,16 @@ opctl run github.com/opspec-pkgs/azure.servicebus.namespace.connectionstring.get
 op:
   ref: github.com/opspec-pkgs/azure.servicebus.namespace.connectionstring.get#2.1.0
   inputs:
-    loginId:
-    loginSecret:
-    loginTenantId:
-    namespace:
-    resourceGroup:
-    subscriptionId:
-    # params w/ default
-    authRule:
-    authRuleKey:
-    loginType:
+    loginId:  # 👈 required; provide a value
+    loginSecret:  # 👈 required; provide a value
+    loginTenantId:  # 👈 required; provide a value
+    namespace:  # 👈 required; provide a value
+    resourceGroup:  # 👈 required; provide a value
+    subscriptionId:  # 👈 required; provide a value
+  ## uncomment to override defaults
+  #   authRule: "RootManageSharedAccessKey"
+  #   authRuleKey: "primary"
+  #   loginType: "user"
   outputs:
     value:
 ```
@@ -47,7 +43,7 @@ op:
 # Support
 
 join us on
-[![Slack](https://opctl-slackin.herokuapp.com/badge.svg)](https://opctl-slackin.herokuapp.com/)
+[![Slack](https://img.shields.io/badge/slack-opctl-E01563.svg)](https://join.slack.com/t/opctl/shared_invite/zt-51zodvjn-Ul_UXfkhqYLWZPQTvNPp5w)
 or
 [open an issue](https://github.com/opspec-pkgs/azure.servicebus.namespace.connectionstring.get/issues)
 
@@ -61,4 +57,4 @@ and [tagged](https://git-scm.com/book/en/v2/Git-Basics-Tagging); see
 # Contributing
 
 see
-[project/CONTRIBUTING.md](https://github.com/opspec-pkgs/project/blob/master/CONTRIBUTING.md)
+[project/CONTRIBUTING.md](https://github.com/opspec-pkgs/project/blob/main/CONTRIBUTING.md)
